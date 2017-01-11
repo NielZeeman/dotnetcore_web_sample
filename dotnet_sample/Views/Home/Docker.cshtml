@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Docker Details";
+}
+<div style="background-image: linear-gradient(0deg,#15A4D7 0%,#1488C6 100%); margin: auto" >
+<img src="~/images/docker.png"/>
+</div>
+
+<h3>@ViewData["MachineName"]</h3>
+<b>Operating System</b> : @ViewData["OSDescription"] <br/>
+<b>Architecture</b> : @ViewData["OSArchitecture"] <br/>
+<b>.Net Framework</b> : @ViewData["FrameworkDescription"] <br/>
+<br/>
+<pre>
+@ViewData["EnvironmentVariables"]
+</pre>
+
+
