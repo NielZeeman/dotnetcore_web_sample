@@ -2,9 +2,9 @@ version: '2'
 
 services:
   dotnet_app:
-    image: ${image_name}
+    image: ${IMAGE_NAME}
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "${EXTERNAL_PORT}:5000"
