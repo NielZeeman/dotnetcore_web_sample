@@ -2,9 +2,6 @@ version: '2'
 
 services:
   dotnet_app:
-    image: ${IMAGE_NAME}
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: dockersampleregistry-on.azurecr.io/sample/dotnet_sample:${BUILD_LABEL}
     ports:
       - "${EXTERNAL_PORT}:5000"
