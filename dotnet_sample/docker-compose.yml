@@ -2,6 +2,6 @@ version: '2'
 
 services:
   dotnet_app:
-    image: dockersampleregistry-on.azurecr.io/sample/dotnet_sample:${BUILD_LABEL}
+    image: ${IMAGE_NAME}
     ports:
       - "${EXTERNAL_PORT}:5000"
